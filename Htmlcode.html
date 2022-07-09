@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7a2de0d6e9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">home <i class="fas fa-home"></i></a></li>
+            <li><a href="index.html">about <i class="fas fa-address-card"></i></a></li>
+            <li><a href="index.html">Work <i class="fas fa-cog"></i></a></li>
+            <li><a href="index.html">Contact Us <i class="fas fa-address-card"></i></a></li>
+        </ul>
+    </header>
+
+    <div class="intro">
+        <h1>Hii..</h1>
+        <h1>I Am Rupesh Mali</h1>
+       <h1>Welcome To My Portfolio Website</h1>
+        <p> " If we can think big then we can also do it " </p>
+        <br><br><br><br>
+        <h1>Login To See The Project</h1>
+
+    </div>
+    <div class="log">
+        <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'"
+            style="width:auto;">Login</button>
+    </div>
+
+    <div id="id01" class="modal animate">
+
+        <div class="loginBox">
+            <img src="images/sinchan3.png" class="user" alt="">
+            <h3>Sign In</h3>
+            <form>
+                <div class="inputBox">
+                    <span><i class="fa fa-user" ></i></span>
+                    <input type="text" placeholder="username">
+                </div>
+                <div class="inputBox">
+                    <span><i class="fa fa-lock"></i></span>
+                    <input type="password" placeholder="password">
+                </div>
+                <a><input type="submit" value="Login"></a>
+            </form>
+            <a href="#">Forget Password?</a>
+        </div>
+    </div>
+
+    <!-- <div class="animated-background"></div> -->
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
